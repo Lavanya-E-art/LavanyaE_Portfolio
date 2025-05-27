@@ -9703,3 +9703,40 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+/* Custom css */
+.cert-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.label {
+  font-weight: bold;
+  width: 180px; /* Fix width for clean alignment */
+  flex-shrink: 0;
+}
+
+.cert-list {
+  margin: 0;
+  padding-left: 1.2rem !important; /* Clean indent */
+  list-style-type: disc;
+}
+
+/* Responsive behavior for small screens */
+@media (max-width: 600px) {
+  .cert-item {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .label {
+    width: auto;
+  }
+
+  .cert-list {
+    padding-left: 1.2rem !important;
+  }
+}
+
